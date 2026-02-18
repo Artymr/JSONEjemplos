@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema#",
+  "$id": "http://my-movies-api.com/schemas/movie-schema.json",
+  "type": "object",
+  "title": "Movie",
+  "description": "Información detallada de una película",
+  "additionalProperties": true,
+  "required": ["title", "director", "releaseYear", "durationMinutes", "genre", "cast"],
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "Título principal de la película"
+    },
+    "director": {
+      "type": "string",
+      "maxLength": 100,
+      "description": "Nombre del director"
+    },
+    "releaseYear": {
+      "type": "number",
+      "minimum": 1888,
+      "maximum": 2026,
+      "description": "Año de estreno"
+    },
+    "durationMinutes": {
+      "type": "number",
+      "minimum": 1,
+      "maximum": 600,
+      "description": "Duración en minutos"
+    },
+    "description": {
+      "type": ["string", "null"],
+      "description": "Sinopsis de la película"
+    },
+    "genre": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["Action", "Adventure", "Sci-Fi", "Drama", "Thriller", "Comedy", "Horror", "Fantasy", "Animation", "Documentary"]
+      },
+      "description": "Géneros de la película"
+    },
+    "cast": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/actor" }
+    }
+  },
+  "$defs": {
+    "actor": {
+      "type": "object",
+      "title": "Actor",
+      "description": "Actor principal en la película",
+      "additionalProperties": true,
+      "required": ["name", "character"],
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Nombre del actor"
+        },
+        "character": {
+          "type": "string",
+          "description": "Personaje interpretado"
+        }
+      }
+    }
+  }
+}

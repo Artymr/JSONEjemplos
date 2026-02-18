@@ -1,0 +1,8 @@
+Realiza los siguientes pasos:
+• Piensa en la información que podríamos guardar
+sobre diferentes películas
+• Diseña el JSON Schema. Ten en cuenta las
+posibles restricciones y que campos son
+obligatorios.
+• Crea al menos dos objetos JSON diferentes que
+sean válidos para el esquema anterior

@@ -1,0 +1,12 @@
+{
+  "name": "Mona Lisa",
+  "artist": "Leonardo da Vinci",
+  "description": "Cuadro del Renacimiento, pintado entre 1503 y 1506. Es una de las obras más famosas del mundo.",
+  "dimension": {
+    "width": 77,
+    "height": 53
+  },
+  "tags": ["oil", "famous"]
+}
+
+

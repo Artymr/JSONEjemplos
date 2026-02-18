@@ -1,0 +1,1 @@
+Ejemplo de JSON a partir de un JSON schema

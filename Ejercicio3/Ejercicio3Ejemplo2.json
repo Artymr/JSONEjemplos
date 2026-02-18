@@ -1,0 +1,13 @@
+{
+  "title": "The Lord of the Rings: The Fellowship of the Ring",
+  "director": "Peter Jackson",
+  "releaseYear": 2001,
+  "durationMinutes": 178,
+  "description": "Un joven hobbit recibe un anillo mágico y emprende un viaje con aliados para destruirlo y salvar la Tierra Media del Señor Oscuro Sauron.",
+  "genre": ["Adventure", "Drama", "Fantasy"],
+  "cast": [
+    {"name": "Elijah Wood", "character": "Frodo Baggins"},
+    {"name": "Ian McKellen", "character": "Gandalf"},
+    {"name": "Viggo Mortensen", "character": "Aragorn"}
+  ]
+}

@@ -1,0 +1,63 @@
+{
+"$schema": "https://json-schema.org/draft/2019-09/schema#",
+"$id": "http://my-superheroes-api.com/schemas/squad-schema.json",
+"type": "object",
+"title": "Squad",
+"description": "Squad information",
+"additionalProperties": true,
+"required": ["squadName", "homeTown", "formed", "secretBase", "active", "members"],
+"properties": {
+    "squadName": {
+        "type": "string",
+        "description": "Squad name"
+    },
+    "homeTown": {
+        "type": "string",
+        "description": "Squad home town"
+    },
+    "formed": {
+        "type": "number",
+        "description": "Year of formation of the squad"
+    },
+    "secretBase": {
+        "type": "string",
+        "description": "Squad secret base"
+    },
+    "active": {
+        "type": "boolean",
+        "description": "Is the squad active?"
+    },
+    "members": {
+        "type": "array",
+        "items": { "$ref": "#/$defs/member" }
+    }
+},
+"$defs": {
+    "member": {
+        "type": "object",
+        "title": "Squad member",
+        "description": "",
+        "additionalProperties": true,
+        "required": ["name",  "age",  "secretIdentity",  "powers"],
+        "properties": {
+            "name": { 
+                "type":"string",
+                "description":"Member name"
+            },
+            "age":{
+                "type":"number",
+                "description":"Member age"
+            },
+            "secretIdentity":{
+                "type":"string",
+                "description":"Member secret identity"
+            },
+            "powers":{
+                "type": "array",
+                "items": { "type": "string" },
+                "description": "List of member powers"
+                }
+            }
+        }
+    }
+}

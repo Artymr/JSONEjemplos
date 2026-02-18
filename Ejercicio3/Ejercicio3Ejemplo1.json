@@ -1,0 +1,13 @@
+{
+  "title": "Kingsman: The Secret Service",
+  "director": "Matthew Vaughn",
+  "releaseYear": 2014,
+  "durationMinutes": 129,
+  "description": "Un joven de barrio es reclutado por una organización secreta de espías para combatir una amenaza global de un millonario excéntrico.",
+  "genre": ["Action", "Adventure", "Comedy"],
+  "cast": [
+    {"name": "Taron Egerton", "character": "Gary 'Eggsy' Unwin"},
+    {"name": "Colin Firth", "character": "Harry Hart / Galahad"},
+    {"name": "Samuel L. Jackson", "character": "Richmond Valentine"}
+  ]
+}
